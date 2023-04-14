@@ -13,9 +13,7 @@
   flex-wrap: wrap;
   justify-content: center;
   /* align-items: center; */
-  
   /* background-color: green; */
-
   /* margin: 0 0 60px 0; */
 }
 
@@ -25,11 +23,13 @@
   border-radius: 25px;
   margin: 10px;
   padding: 10px 20px 20px 20px;
-  background-color: #fff;
+  background-color: var(--light);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   z-index: 3;
 }
-
+span{
+  color: var(--dark);
+}
 .producto-card .logo-cart {
   display: flex;
   margin-top: 10px;
@@ -59,13 +59,14 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 240px;
+  height: 260px;
 }
 
 .producto-card .main-images img {
-  height: 240px;
+  height: 255px;
   width: 240px;
-  object-fit: cover;
+  border-radius:5px;
+  object-fit: fill;
   /* transform: rotate(18deg); */
   left: 16px;
   top: -10px;
@@ -81,12 +82,12 @@
 .producto-card .shoe-details .shoe-name {
   font-size: 16px;
   font-weight: bold;
-  color: #161616;
+  color: var(--dark);
 }
 
 .producto-card .shoe-details p {
   font-size: 13px;
-  color: black;
+  color: var(--dark);
   font-weight: 500;
   text-align: justify;
 }
@@ -110,7 +111,7 @@
   transition: 0.5s;
   background-size: 200% auto;
   color: white;
-  box-shadow: 0 0 20px #eee;
+  box-shadow: 0 0 10px #eee;
   border-radius: 10px;
   display: block;
   border: 0;
